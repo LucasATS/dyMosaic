@@ -1,7 +1,6 @@
-import { Button, View } from "react-native";
-import { MyTestes } from "./components/Testes";
-import { TesteWeb } from "./components/webview";
+import { ImageEditor } from "./src/modules/imageEditor";
+
 
 export default function App() {
-  return (<TesteWeb />);
+  return (<ImageEditor />);
 }
