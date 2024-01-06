@@ -1,8 +1,6 @@
-# dyMosaic: SISTEMA DE EDIÇÃO DE IMAGEM COM FILTRO
+# dyMosaic: App de edição de imagem
 
-## APP de edição de imagens
-
-Desenvolvido durante 4 dias, por Thalia
+by Thalia
 
 ## **Objetivo**
 
@@ -18,6 +16,8 @@ No inicio foi complexo pois foi necessário o usu de ferramentas avançadas, ent
 
 ## **📂 PLAY EXPO**
 
+> Funciona apenas no mobile
+
     npx expo start --web
 
     ou
@@ -32,7 +32,7 @@ No inicio foi complexo pois foi necessário o usu de ferramentas avançadas, ent
     
     npx expo install expo-status-bar react react-native expo-image-picker expo-sharing react-native-webview expo-constants react-native-web react-dom @expo/webpack-config
 
-### Do chatgpt
+## Sobre
 
 dyMosaic: Transforme suas fotos em obras de arte!
 
