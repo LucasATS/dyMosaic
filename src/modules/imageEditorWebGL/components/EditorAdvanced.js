@@ -1,11 +1,10 @@
 import { StyleSheet, View, Text } from 'react-native';
 import Slider from '@react-native-community/slider';
-import React from 'react';
 
 
-export default ({ value, name, minimum, maximum, step = 1, onChange }) => (
+export default ({ value, name, minimum, maximum, step = 1, onChange, colorText }) => (
     <View style={styles.container}>
-        <Text style={styles.text}>{name}</Text>
+        <Text style={[styles.text, { color: colorText }]}>{name}</Text>
         <Slider
             style={styles.slider}
             value={value}
