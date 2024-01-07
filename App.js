@@ -1,4 +1,4 @@
-// import { ImageEditorWebView } from "./src/modules/imageEditor";
+import { ImageEditorWebView } from "./src/modules/imageEditorWebview";
 import { ImageEditorWebGL } from "./src/modules/imageEditorWebGL";
 
 
