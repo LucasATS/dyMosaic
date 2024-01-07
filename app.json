@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "sistema-de-imagem-com-filtro",
+    "name": "dyMosaic",
     "slug": "snack-9c556467-cf2c-4f24-855d-520d789c9e2a",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -28,6 +28,16 @@
     },
     "web": {
       "favicon": "./src/assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos.",
+          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ]
   }
 }

@@ -1,6 +1,7 @@
-import { ImageEditor } from "./src/modules/imageEditor";
+// import { ImageEditorWebView } from "./src/modules/imageEditor";
+import { ImageEditorWebGL } from "./src/modules/imageEditorWebGL";
 
 
 export default function App() {
-  return (<ImageEditor />);
+  return (<ImageEditorWebGL />);
 }
