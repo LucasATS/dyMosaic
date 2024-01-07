@@ -3,7 +3,8 @@
 ## VERSÃO 1.0
 
 - Arquitetura
-  - [ ] Corrigir arquitetura, baseada em componentes
-  - [ ] Padronizar para realizar a integração ao ATP
-  - [ ] Salvar imagem editada (offline)
-  - [ ] Impedir que possa dar zoom com o movimento de pinça
+  - [X] Corrigir arquitetura, baseada em componentes
+  - [X] Padronizar para realizar a integração ao ATP
+  - [X] Salvar imagem editada (offline)
+  - [X] Impedir que possa dar zoom com o movimento de pinça
+  - [ ] Melhorar a qualidade da imagem
