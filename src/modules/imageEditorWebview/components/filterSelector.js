@@ -1,6 +1,6 @@
-import WebView from "react-native-webview";
-import { memo, useEffect, useState } from "react";
 import { screenShotElementWebView } from "../../../components/ScreenshotElementWebView";
+import { memo, useEffect, useState } from "react";
+import WebView from "react-native-webview";
 
 
 const tagFilterParent = 'filterParent';
@@ -13,7 +13,6 @@ export const FilterSelector = memo(({
     UiBackgroundColor = 'black',
     onSave = false,
 }) => {
-    const [injectedScript, setInjectedScript] = useState("");
     const [currentFilter, setCurrentFilter] = useState("");
 
 
@@ -143,7 +142,6 @@ const RenderPresetHtml = ({
     font-size:35px;
     text-shadow: -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000, 2px 2px 0px #000;
     `);
-
     const imgStyle = `display: flex; justify-content: center; align-content: center; border-radius: 8px; object-fit: cover;`;
 
 
@@ -151,8 +149,16 @@ const RenderPresetHtml = ({
     const tagFiltroChildPreview = 'FC_' + name;
 
 
+    const convertCode = () => {
+        try {
+            return code.replaceAll(tagFilterParent, tagFilterParentPreview).replaceAll(tagFiltroChild, tagFiltroChildPreview);
+        } catch (error) {
+            return '';
+        }
+    };
+
     const styleFilterPreview = `<style>
-    ${code.replaceAll(tagFilterParent, tagFilterParentPreview).replaceAll(tagFiltroChild, tagFiltroChildPreview)}
+    ${convertCode()}
     .${tagFilterParentPreview}:after{border-radius: 8px;}
     </style>`;
 

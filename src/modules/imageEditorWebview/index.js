@@ -12,6 +12,7 @@ const UiBackgroundColor = 'white';
 const UiStatusBarStyle = 'dark'; //light or dark
 const UiElementsColor = 'black';
 
+
 export const ImageEditorWebView = memo(() => {
     const [onSave, setOnSave] = useState(false);
     const [photo, setPhoto] = useState(null);
