@@ -1,10 +1,10 @@
 import { Pressable, SafeAreaView, StyleSheet, Text, View } from "react-native";
 import { FilterSelector } from "./components/filterSelector";
 import { memo, useEffect, useState } from "react";
+import { Button } from "../../components/buttom";
 import * as ImagePicker from 'expo-image-picker';
 import { presets } from "./components/presets";
 import { StatusBar } from "expo-status-bar";
-import { Button } from "../../components/buttom";
 
 
 // UI
@@ -12,7 +12,7 @@ const UiBackgroundColor = 'white';
 const UiStatusBarStyle = 'dark'; //light or dark
 const UiElementsColor = 'black';
 
-export const ImageEditor = memo(() => {
+export const ImageEditorWebView = memo(() => {
     const [onSave, setOnSave] = useState(false);
     const [photo, setPhoto] = useState(null);
 
@@ -20,15 +20,7 @@ export const ImageEditor = memo(() => {
     const getRandomImage = async () => {
         setOnSave(false);
         
-        try {
-            setPhoto("");
-            // const randomNumW = Math.floor(Math.random() * 101) + 250;
-            const randomNumH = Math.floor(Math.random() * 101) + 250;
-            const link = await fetch(`https://picsum.photos/${randomNumH}/${randomNumH}`, 'GET');
-            setPhoto(link.url);
-        } catch (e) {
-            console.log(e);
-        }
+        setPhoto(await getRandomImage());
     }
 
 
