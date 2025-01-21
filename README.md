@@ -1,13 +1,13 @@
 # dyMosaic: App de edição de imagem
 
-by Thalia
+Artigo sobre: [WebGL](https://www.linkedin.com/posts/lucas-almeida-tiburtino-da-silva_webgl-reactnative-desenvolvimento-activity-7153763414857654272-8cUa)
 
 ## **Sobre**
 
 Ser um app simples de edição básica de imagem usando filtros.
 No inicio foi complexo pois foi necessário o usu de ferramentas avançadas, entretanto, ao notar que tudo podia ser resolvido apenas com webview, o sistema ficou super mais tranquilo e simples de entender. O foco agora é aprimorar o código e realizar a integração no sistema ATP.
 
-O código com webview foi aprimorado, e consegui obter um resultado muito bom, o tempo de carregamento e o processamento da imagem são bons, entretanto, não consegui renderizar e salvar a imagem editada. Oque é lógico, péssimo para a situação. Eu tinha mais um plano em mente para isso, mas antes que pude dar inicio a ele, encontrei uma biblioteca interesante usando openGL e webGL. Implementei, e deu certo, além disso, consegui salvar a imagem editada, os prontos negativos são que eu não posso utilizar filtros complexos igual ao do Webview, além disso a qualidade da imagem ficou um pouco baixa, mas os resultados ainda são interesantes, aparentemente, irei continuar implementando essa versão pois é mais ideal para o sistema no momento, entretanto, acredito que a versão webview, se fosse mais bem elaborada, poderia dar mais resultados com o meu outro conceito de renderização de imagem que não pude testar. 
+O código com webview foi aprimorado, e consegui obter um resultado muito bom, o tempo de carregamento e o processamento da imagem são bons, entretanto, não consegui renderizar e salvar a imagem editada. Oque é lógico, péssimo para a situação. Eu tinha mais um plano em mente para isso, mas antes que pude dar inicio a ele, encontrei uma biblioteca interesante usando openGL e webGL. Implementei, e deu certo, além disso, consegui salvar a imagem editada, os prontos negativos são que eu não posso utilizar filtros complexos igual ao do Webview, além disso a qualidade da imagem ficou um pouco baixa, mas os resultados ainda são interesantes, aparentemente, irei continuar implementando essa versão pois é mais ideal para o sistema no momento, entretanto, acredito que a versão webview, se fosse mais bem elaborada, poderia dar mais resultados com o meu outro conceito de renderização de imagem que não pude testar.
 
 Obs: a grande chance de eu não testar esse outro conceito, principalmente agora que não consigo mais acessar o webview por algum motivo de bug.
 
@@ -20,7 +20,7 @@ Obs: a grande chance de eu não testar esse outro conceito, principalmente agora
 
 ## **📂 PLAY EXPO**
 
-> Funciona apenas no mobile
+> Funciona apenas no mobile com node 16x
 
     npx expo start --web
 
